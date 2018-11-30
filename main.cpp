@@ -29,8 +29,8 @@ int main(){
         std::cin>>opcao;
         std::cout<<"----------------------------------------------"<<std::endl;
         //tratamento com a variavel opcao de string para int deito para evitar erros com entradas erradas
-        switch(int(opcao)){
-            case 49:
+        switch(opcao){
+            case '1':
                 std::cout<<"Digite a palavra ou frase a ser adicionada"<<std::endl;
                 std::cin.ignore (80, '\n');
                 std::getline(std::cin,s);
@@ -44,13 +44,13 @@ int main(){
                     }
                 }
                 break;
-            case 50:
+            case '2':
                 std::cout<<"Digite a palavra a ser removida"<<std::endl;
                 std::cin.ignore (80, '\n');
                 std::getline(std::cin,s);
                 x.remover(s);
                 break;
-            case 51:
+            case '3':
                 std::cout<<"Digite a palavra a ser removida"<<std::endl;
                 std::cin.ignore (80, '\n');
                 std::getline(std::cin,s);
@@ -60,7 +60,7 @@ int main(){
                     std::cout<<"Palavra nao encontrada"<<std::endl;
                 }
                 break;
-            case 52:
+            case '4':
                 x.imprimir(true);
                 break;
             default:

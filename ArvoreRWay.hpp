@@ -113,10 +113,6 @@ public:
             std::cout<<"palavra nao foi encontrada"<<std::endl;
         }
     }
-
-
-
-
 };
 
 #endif // ARVORERWAY_HPP_INCLUDED
