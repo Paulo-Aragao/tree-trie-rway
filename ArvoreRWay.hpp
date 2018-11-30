@@ -9,9 +9,10 @@
 class ArvoreRWay{
 private:
     No root;
-    int tamanho_alf = 128;
+    int tamanho_alf;
 public:
     ArvoreRWay(){
+		tamanho_alf = 128;
         root.criarFilhos(tamanho_alf);
     }
     void imprimir(bool first,No *no = nullptr,std::string palavra =""){//função recursiva para imprimir o conteudo da arvore

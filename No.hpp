@@ -9,13 +9,18 @@
 
 class No{
 private:
-    char chave='$';
-    bool fim = false;
+    char chave;
+    bool fim;
     No * pai;
-    bool folha=false;//variavel para informar se o no tem filhos.
+    bool folha;//variavel para informar se o no tem filhos.
 public:
     No *filhos;
 public:
+	No(){
+		chave='$';
+		fim = false;
+		folha=false;
+	}
     No* getPai(){
         return pai;
     }
